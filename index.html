@@ -5,11 +5,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>طاها مظفری | برنامه‌نویس ۱۳ ساله</title>
+    <title>طاها مظفری | برنامه‌نویس 14 ساله</title>
 
     <meta name="author" content="Taha.mz" />
 
     <meta name="theme-color" content="#764ba2" />
+
+    <meta name="robots" content="index, follow" />
 
     <meta
       name="keywords"
@@ -18,8 +20,9 @@
 
     <meta
       name="description"
-      content="طاها مظفری برنامه نویس جوان مشغول یادگیری جاوا اسکریپت."
+      content="طاها مظفری، برنامه‌نویس ۱۴ ساله ایرانی. سایت شخصی من شامل مهارت‌ها (HTML، CSS، JavaScript، Python)، پروژه‌ها، گواهی‌نامه‌ها و راه‌های ارتباطی است. در حال یادگیری React و Node.js."
     />
+    <link rel="canonical" href="https://tahamozafaridev.github.io/index.html" />
     <link rel="icon" href="./images/favicon.webp" type="image/webp" />
     <!--لینک کردن سی اس اس-->
     <link rel="stylesheet" href="style.css" />
@@ -41,7 +44,7 @@
       }
     </script>
     <!-- Open Graph برای شبکه‌های اجتماعی -->
-    <meta property="og:title" content="طاها مظفری | برنامه‌نویس ۱۳ ساله" />
+    <meta property="og:title" content="طاها مظفری | برنامه‌نویس 14 ساله" />
     <meta
       property="og:description"
       content="سلام! من طاها هستم، ۱۳ ساله و عاشق برنامه‌نویسی. سایت شخصی من شامل مهارت‌ها، پروژه‌ها و گواهی‌نامه‌هام."
@@ -57,20 +60,30 @@
   <body class="body">
     <!--کانتینر اصلی صفحه-->
     <div class="container">
-      <button id="darkModeToggle" class="dark-mode-btn">🌙دارک مود</button>
+      <button
+        type="button"
+        id="darkModeToggle"
+        class="dark-mode-btn"
+        aria-label="تغییر حالت روشن و تاریک"
+      >
+        🌙دارک مود
+      </button>
       <!-- هدر با عکس پروفایل -->
       <header class="header">
         <section class="avatar">
           <img
-            src="./images/Taha-Mozafari-Image.jpg "
-            alt="Taha-Mozafari-Image"
+            src="./images/Taha-Mozafari-Image.jpg"
+            alt="عکس پروفایل طاها مظفری، برنامه‌نویس نوجوان"
             id="avatar-img"
+            width="200"
+            height="200"
             loading="lazy"
+            decoding="async"
           />
         </section>
         <div class="about-image">
           <h1 id="page-title">طاها مظفری</h1>
-          <div class="age"><span>۱۳</span> ساله | پایه هفتم</div>
+          <div class="age"><span>14</span> ساله | پایه هشتم</div>
         </div>
       </header>
       <nav id="nav">
@@ -83,7 +96,7 @@
       <main>
         <!-- درباره من -->
         <section class="section">
-          <h3 data-icon="👋">درباره من</h3>
+          <h2 data-icon="👋">درباره من</h2>
           <p style="font-size: 16px" id="about">
             سلام! من طاها هستم، ۱۳ ساله و عاشق برنامه‌نویسی. از ۷ سالگی ماینکرفت
             بازی می‌کردم و الان دارم وبسایت می‌سازم! هدفم اینه که تا ۱۸ سالگی یه
@@ -92,7 +105,7 @@
         </section>
         <!-- مهارت‌ها -->
         <section class="section">
-          <h3 data-icon="💻">مهارت‌ها</h3>
+          <h2 data-icon="💻">مهارت‌ها</h2>
           <div id="skills">
             <span class="skill">HTML5</span>
             <span class="skill">CSS3</span>
@@ -106,7 +119,7 @@
 
         <!-- پروژه‌ها -->
         <section class="section">
-          <h3 data-icon="🛒">پروژه‌ها</h3>
+          <h2 data-icon="🛒">پروژه‌ها</h2>
           <div id="projects">
             <div class="project-card">
               <h4>🛍️ UC Shop</h4>
@@ -117,7 +130,7 @@
               <h4 data-icon="📱">همین سایت</h4>
               <p>سایت شخصی شامل مهارت ها و گواهی نامه ها.</p>
               <span id="visit-project">
-                <h3>هم اکنون درحال مشاهده آن هستید.</h3></span
+                <h2>هم اکنون درحال مشاهده آن هستید.</h2></span
               >
             </div>
           </div>
@@ -125,7 +138,7 @@
 
         <!-- دستاوردها -->
         <section class="section">
-          <h3 data-icon="🏆">دستاوردها</h3>
+          <h2 data-icon="🏆">دستاوردها</h2>
           <ul id="achievements">
             <li>تقدیرنامه دبستان تدبیر</li>
             <li>کمربند زرد ووشو</li>
@@ -136,7 +149,7 @@
 
         <!-- گواهی‌نامه‌ها -->
         <section class="section">
-          <h3 data-icon="📜">گواهی‌نامه‌ها</h3>
+          <h2 data-icon="📜">گواهی‌نامه‌ها</h2>
           <div id="certificates">
             <span class="cert">پایتون - ایران دیجیتال </span>
             <span class="cert">Word - فرادرس</span>
@@ -151,7 +164,7 @@
 
       <!-- لینک‌های مهم -->
       <div class="section">
-        <h3 data-icon="🔗">لینک‌ها</h3>
+        <h2 data-icon="🔗">لینک‌ها</h2>
         <div class="links">
           <a href="https://github.com/Tahamozafari1234" class="link-btn"
             >🐈‍⬛ گیت‌هاب</a
@@ -169,7 +182,7 @@
       </div>
       <!--ارتباط با من-->
       <div class="section">
-        <h3 data-icon="📞">ارتباط با من</h3>
+        <h2 data-icon="📞">ارتباط با من</h2>
         <div id="connect" class="links">
           <a href="mailto:tahamozafari8660@gmail.com" class="link-btn"
             >📧ایمیل</a

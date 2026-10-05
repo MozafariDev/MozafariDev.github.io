@@ -94,7 +94,7 @@ h1 {
   border: 1px solid #c1bdb9;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
-h3 {
+h2 {
   color: #333;
   margin-bottom: 20px;
   display: flex;
@@ -103,7 +103,7 @@ h3 {
   font-size: 20px;
 }
 
-h3::before {
+h2::before {
   content: attr(data-icon);
   font-size: 24px;
 }
@@ -276,10 +276,17 @@ footer {
 
 html {
   scroll-behavior: smooth;
-  user-select: none;
   scroll-padding-top: 100px;
 }
 
+button,
+.skill,
+.cert,
+.link-btn,
+.nav-button,
+.check {
+  user-select: none;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
