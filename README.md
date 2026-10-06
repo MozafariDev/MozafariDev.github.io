@@ -1,4 +1,4 @@
-ر# Taha Mozafari — Personal Portfolio
+# Taha Mozafari — Personal Portfolio
 
 <p align="center">
   <strong>Web Development • Front-End • Programming • Continuous Learning</strong>
