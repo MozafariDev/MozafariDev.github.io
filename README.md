@@ -1,4 +1,4 @@
-# Taha Mozafari — Personal Portfolio
+ر# Taha Mozafari — Personal Portfolio
 
 <p align="center">
   <strong>Web Development • Front-End • Programming • Continuous Learning</strong>
@@ -51,33 +51,37 @@ MozafariDev.github.io/
 ├── robots.txt
 ├── sitemap.xml
 └── images/
+```
 
+## 🚀 Run Locally
 
-
-
-🚀 Run Locally
 Clone the repository and open the project locally:
 
-bash
+```bash
 git clone https://github.com/MozafariDev/MozafariDev.github.io.git
 cd MozafariDev.github.io
-Then open index.html in a modern browser.
+```
 
-🌐 Live Project
-Personal website: https://mozafaridev.github.io
+Then open `index.html` in a modern browser.
 
-📬 Contact & Profiles
-Website: https://mozafaridev.github.io
+## 🌐 Live Project
 
-GitHub: https://github.com/MozafariDev
+**Personal website:** https://mozafaridev.github.io
 
-Quera: https://quera.org/profile/Taha.mz
+## 📬 Contact & Profiles
 
-Telegram: https://t.me/coldwar1960
+- **Website:** https://mozafaridev.github.io
+- **GitHub:** https://github.com/MozafariDev
+- **Quera:** https://quera.org/profile/Taha.mz
+- **Telegram:** https://t.me/coldwar1960
+- **Email:** tahamozafari8660@gmail.com
 
-Email: tahamozafari8660@gmail.com
+## 📌 Project Status
 
-📌 Project Status
 This is an actively improving personal project. New features, refinements, and bug fixes may be added as I continue learning and developing.
 
-<p align="center"> ⭐ Thanks for visiting — feel free to explore the project and follow its progress. </p> ```
+---
+
+<p align="center">
+  ⭐ Thanks for visiting — feel free to explore the project and follow its progress.
+</p>
