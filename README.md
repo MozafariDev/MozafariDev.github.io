@@ -53,7 +53,7 @@ MozafariDev.github.io/
 └── images/
 🚀 Run Locally
 Clone the repository and open the project locally:
-
+,,,
 bash
 git clone https://github.com/MozafariDev/MozafariDev.github.io.git
 cd MozafariDev.github.io
