@@ -6,10 +6,13 @@
   font-family: "Lalezar", Tahoma, sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  transition: all 0.5s ease;
+.skill,
+.cert,
+.link-btn,
+.nav-button {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 #visit-project {
@@ -24,9 +27,11 @@
   font-style: normal;
   font-display: swap;
 }
-
+.about {
+  letter-spacing: 2px;
+}
 body {
-  background: #fafafa;
+  background: #f4f4ec;
   min-height: 100vh;
   padding: 20px;
 }
@@ -50,7 +55,14 @@ body {
   flex-wrap: wrap;
   gap: 50px;
 }
-
+.project-view {
+  color: #764ba2;
+  user-select: none;
+  transition: color 0.3 linear;
+}
+.project-view:hover {
+  color: #9b59b6;
+}
 #about-image {
   display: block;
 }
@@ -67,16 +79,16 @@ body {
   height: 200px;
   border-radius: 50%;
   margin: 0;
-  border: 3px solid #9b59b6;
+  border: 3px solid #764ba2;
 }
 
 h1 {
-  color: #333;
+  color: #555;
   margin-bottom: 5px;
   font-size: 32px;
 }
 .age {
-  color: #666;
+  color: #555;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -95,7 +107,7 @@ h1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 h2 {
-  color: #333;
+  color: #555;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -115,7 +127,7 @@ h2::before {
 }
 
 .skill {
-  background-color: #e0e0e0;
+  background-color: #f7f7ec;
   padding: 10px 20px;
   border-radius: 10px;
   color: #764ba2;
@@ -138,13 +150,14 @@ h2::before {
 }
 
 .project-card {
-  background-color: #e0e0e0;
+  background-color: #f7f7ec;
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   margin: 0;
   border: 1px solid #764ba2;
   flex-grow: 1;
+  transition: all 0.3s linear;
 }
 
 .project-card h3 {
@@ -153,37 +166,10 @@ h2::before {
 }
 
 .project-card p {
-  color: #666;
+  color: #555;
   margin-bottom: 15px;
   font-size: 12px;
   flex-wrap: wrap;
-}
-
-#achievements {
-  list-style: none;
-}
-
-#achievements li {
-  background-color: #e0e0e0;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  border: 1px solid #764ba2;
-  font-family: "Lalezar", Tahoma, sans-serif;
-  justify-content: center;
-}
-
-#achievements li:hover {
-  box-shadow: 0 10px 20px rgba(103, 24, 182, 0.489);
-}
-
-#achievements li::before {
-  content: "🏆";
-  font-size: 20px;
 }
 
 #certificates {
@@ -193,7 +179,7 @@ h2::before {
 }
 
 .cert {
-  background-color: #e0e0e0;
+  background-color: #f7f7ec;
   padding: 8px 15px;
   border-radius: 10px;
   color: #764ba2;
@@ -218,7 +204,7 @@ h2::before {
 }
 
 .link-btn {
-  background-color: #e0e0e0;
+  background-color: #f7f7ec;
   padding: 25px 25px;
   border-radius: 10px;
   text-decoration: none;
@@ -228,13 +214,14 @@ h2::before {
   border: 1px solid #764ba2;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   flex-wrap: wrap;
-  transition: all 0.5s linear;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
-
 .link-btn:hover {
-  background-color: #9b64d1;
-  color: white;
-  transition: all 0.5s linear;
+  background-color: #764ba2;
+  color: #f7f7ec;
+  transition: all 0.3s linear;
 }
 
 footer {
@@ -243,26 +230,26 @@ footer {
   padding-bottom: 20px;
   color: #666;
   font-size: 14px;
-  background: #f4f4ec;
+  background: #f7f7ec;
   border-radius: 10px;
   padding: 20px;
   border: 1px solid #c1bdb9;
 }
 
 .cert:hover {
-  background-color: #9b64d1;
-  color: white;
+  background-color: #764ba2;
+  color: #f7f7ec;
   transition: all 0.5s linear;
 }
 
 .skill:hover {
-  background-color: #9b64d1;
-  color: white;
+  background-color: #764ba2;
+  color: #f7f7ec;
   transition: all 0.5s linear;
 }
 
 .project-card:hover {
-  box-shadow: 0 5px 12px rgba(103, 24, 182, 0.489);
+  box-shadow: 0 3px 5px rgba(103, 24, 182, 0.489);
 }
 
 #quera::before {
@@ -287,16 +274,21 @@ button,
 .check {
   user-select: none;
 }
+#visit-project,
+#visit-project-2 {
+  letter-spacing: 1.5px;
+  font-size: 15px;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f4f4ec;
+  background-color: #f7f7ec;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #669bea;
+  background: #764ba2;
   border-radius: 5px;
 }
 
@@ -305,7 +297,7 @@ button,
 }
 
 #footer-year {
-  color: #9b59b6;
+  color: #764ba2;
 }
 
 #nav {
@@ -318,10 +310,12 @@ button,
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 10px;
+  transition: all 0.3s linear;
+  background: #f7f7ec;
 }
 
 .nav-button {
-  background-color: #e0e0e0;
+  background-color: #f7f7ec;
   padding: 3px;
   border-radius: 10px;
   text-decoration: none;
@@ -337,19 +331,18 @@ button,
 }
 
 .nav-button,
-.nav-button::after,
-.nav-button::before {
+.nav-button::after {
   transition: all 0.3s linear;
 }
 
 .nav-button:hover {
-  background-color: #9b64d1;
-  color: white;
+  background-color: #764ba2;
+  color: #f7f7ec;
   transition: all 0.3s linear;
 }
 
 #nav:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 #about {
@@ -380,10 +373,6 @@ button,
     gap: 15px;
   }
 
-  #achievements li {
-    padding: 8px;
-  }
-
   .cert {
     flex-basis: 150px;
   }
@@ -402,11 +391,7 @@ button,
 }
 
 @media (max-width: 450px) {
-  #achievements li {
-    font-size: 14px;
-  }
-
-  #about {
+  .about {
     font-size: 12px;
   }
 
@@ -424,10 +409,6 @@ button,
     font-size: 12px;
   }
 
-  #achievements li {
-    font-size: 12px;
-  }
-
   .link-btn {
     padding: 10px 10px;
   }
@@ -435,40 +416,40 @@ button,
 
 /* حالت تیره */
 .dark-mode-btn {
-  background-color: #9b59b6;
+  background-color: #764ba2;
   padding: 5px 5px;
   border-radius: 10px;
-  color: #e0e0e0;
-  border: 1px solid #e0e0e0;
+  color: #f7f7ec;
+  border: 1px solid #f7f7ec;
   box-shadow: 0 1px 3px rgba(103, 24, 182, 0.489);
   transition: all 0.3s linear;
   display: flex;
   margin: 3px;
   opacity: 0.9;
   position: sticky;
-  top: 10px;
-  z-index: 1000;
+  top: 5px;
+  z-index: 1;
   cursor: pointer;
 }
 
 .dark-mode-btn:hover {
-  background-color: #764ba2;
+  background-color: #9b59b6;
   opacity: 1;
 }
 
 body.dark-mode {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: #e0e0e0;
+  background: #121212;
+  color: #f7f7ec;
 }
-
+body.dark-mode h2 {
+  color: #f7f7ec;
+}
 body.dark-mode .container,
-body.dark-mode .project-card,
-body.dark-mode #achievements li {
+body.dark-mode .project-card {
   background: #121412bc;
-  color: #e0e0e0;
-  border-color: #9b59b6;
+  color: #f7f7ec;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  border: 1px solid#764ba2;
+  border: 1px solid #764ba2;
 }
 
 body.dark-mode .section,
@@ -477,8 +458,11 @@ body.dark-mode .cert,
 body.dark-mode .nav-button,
 body.dark-mode #nav {
   background: #181a18;
+  transition: all 0.2s linear;
 }
-
+body.dark-mode .nav-button:hover {
+  box-shadow: 0 2px 5px rgba(103, 24, 182, 0.489);
+}
 body.dark-mode .nav-button,
 body.dark-mode .link-btn {
   color: #e0e0e0;
@@ -486,62 +470,58 @@ body.dark-mode .link-btn {
 }
 
 body.dark-mode .link-btn:hover {
-  color: #e0e0e0;
+  color: #f7f7ec;
 }
 
 body.dark-mode .section h3 {
-  color: #e0e0e0;
+  color: #f7f7ec;
 }
 
 body.dark-mode .cert:hover {
-  color: #e0e0e0;
+  color: #f7f7ec;
   box-shadow: 0 5px 12px rgba(103, 24, 182, 0.489);
 }
 
-body.dark-mode #achievements li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(103, 24, 182, 0.489);
-}
-
 body.dark-mode .cert {
-  color: #9b59b6;
+  color: #764ba2;
 }
 
 body.dark-mode .skill {
-  color: #9b59b6;
+  color: #764ba2;
+  transition-duration: 0.2s;
 }
 
 body.dark-mode .skill:hover {
-  color: #e0e0e0;
+  color: #f7f7ec;
+  box-shadow: 0 2px 5px rgba(103, 24, 182, 0.489);
 }
 
 body.dark-mode .project-card h3 {
-  color: #9b59b6;
+  color: #764ba2;
 }
 
 body.dark-mode .project-card p {
-  color: #e0e0e0;
+  color: #f7f7ec;
 }
 
 body.dark-mode .project-card:hover {
-  box-shadow: 0 8px 20px rgba(103, 24, 182, 0.489);
-  transform: translateY(-3);
+  box-shadow: 0 2px 5px rgba(103, 24, 182, 0.489);
 }
 
 body.dark-mode #page-title {
-  color: #e0e0e0;
+  color: #f7f7ec;
 }
 
 body.dark-mode .age {
-  color: #e0e0e0;
+  color: #f7f7ec;
 }
 
 body.dark-mode #footer-span {
-  color: #e0e0e0;
+  color: #f7f7ec;
   font-family: "Lalezar", Tahoma, sans-serif;
 }
 
 body.dark-mode footer {
-  color: #e0e0e0;
+  color: #f7f7ec;
   background: #1a1a2e;
 }

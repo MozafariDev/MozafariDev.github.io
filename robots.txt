@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Tahamz.runflare.run/sitemap.xml
+Sitemap: https://mozafari.vercel.app/sitemap.xml
