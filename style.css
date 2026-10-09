@@ -274,8 +274,7 @@ button,
 .check {
   user-select: none;
 }
-#visit-project,
-#visit-project-2 {
+#visit-project {
   letter-spacing: 1.5px;
   font-size: 15px;
 }
