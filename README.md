@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://mozafaridev.github.io">🌐 Website</a> •
+  <a href="https://mozafari.vercel.app">🌐 Website</a> •
+  <a href="https://mozafari.vercel.app/blog.html">📄 My blog</a> •
   <a href="https://github.com/MozafariDev">🐙 GitHub</a> •
   <a href="https://quera.org/profile/Taha.mz">💻 Quera</a>
 </p>
@@ -48,8 +49,10 @@ MozafariDev.github.io/
 ├── certificates-galery.html
 ├── galery.css
 ├── ticket.html
+├── blog.html
 ├── robots.txt
 ├── sitemap.xml
+├── fonts/
 └── images/
 ```
 
@@ -66,11 +69,11 @@ Then open `index.html` in a modern browser.
 
 ## 🌐 Live Project
 
-**Personal website:** https://mozafaridev.github.io
+**Personal website:** https://mozafari.vercel.app
 
 ## 📬 Contact & Profiles
 
-- **Website:** https://mozafaridev.github.io
+- **Website:** https://mozafari.vercel.app
 - **GitHub:** https://github.com/MozafariDev
 - **Quera:** https://quera.org/profile/Taha.mz
 - **Telegram:** https://t.me/coldwar1960
