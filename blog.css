@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  color: #333;
+  font-family: "Lalezar", Tahoma, sans-serif;
+}
+@font-face {
+  font-family: "Lalezar";
+  src: url("fonts/Lalezar-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #f7f7ec;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  color: #555;
+  margin-right: 20px;
+}
+h2 {
+  color: #764ba2;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+p {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+body {
+  background: #f7f7ec;
+  min-height: 100vh;
+  padding: 20px;
+}
+.head {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  flex-wrap: wrap;
+  gap: 50px;
+  background: #f7f7ec;
+}
+
+.blog-card {
+  background: #f7f7ec;
+  border: 1px #333 solid;
+  border-radius: 10px;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  transition: all 0.3s ease;
+}
+.blog-card:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.back {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #764ba2;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  padding: 5px;
+  width: 150px;
+  background: #f7f7ec;
+  flex-grow: 0.5;
+  text-align: center;
+  justify-content: space-between;
+}
+.back:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.blog-view {
+  display: block;
+  border-radius: 10px;
+
+  border: 1px solid #764ba2;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  padding: 5px;
+  width: 150px;
+  background: #f7f7ec;
+  flex-grow: 0.5;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.blog-view:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+img {
+  height: 100%;
+  width: auto;
+  margin-right: auto;
+  border-radius: 10px 0px 0px 10px;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
