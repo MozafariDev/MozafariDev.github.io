@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  letter-spacing: 1px;
-  font-family: "Lalezar", Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+  font-weight: bold;
 }
 html {
-  width: fit-content;
+  width: 100%;
 }
-.skill,
+
+button,
 .cert,
 .link-btn,
 .nav-button {
@@ -23,8 +25,8 @@ html {
 }
 
 @font-face {
-  font-family: "Lalezar";
-  src: url("fonts/Lalezar-Regular.ttf") format("truetype");
+  font-family: "Vazirmatn";
+  src: url("fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -33,11 +35,12 @@ html {
 .about {
   letter-spacing: 2px;
   font-size: 18px;
+  color: #354459;
 }
 
 body {
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
   background-color: #fafafa;
 }
 
@@ -54,13 +57,9 @@ body {
 }
 
 .project-view {
-  color: #764ba2;
+  color: #ffc400;
   user-select: none;
-  transition: color 0.3 linear;
-}
-
-.project-view:hover {
-  color: #9b59b6;
+  text-decoration: none;
 }
 
 .avatar {
@@ -73,9 +72,9 @@ body {
 #avatar-img {
   width: 220px;
   height: 220px;
-  border-radius: 50%;
+  border-radius: 40% 30% 70% 20%;
   margin: 0;
-  border: 3px solid #764ba2;
+  border: 3px solid #ffc400;
 }
 
 h1 {
@@ -91,13 +90,13 @@ h1 {
 }
 
 .age span {
-  color: #764ba2;
+  color: #ffc400;
   font-weight: bold;
   font-size: 40px;
 }
 
 .section {
-  background: #ffff;
+  background: #ffffff;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 15px;
@@ -122,24 +121,41 @@ h2::before {
 #skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .skill {
-  background-color: #fefefd;
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: #764ba2;
-  border: 1px solid #764ba2;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  flex-grow: 1;
-  text-align: center;
-  flex-basis: 130px;
-  align-content: center;
-  flex-shrink: 1;
+  display: block;
+  width: 40%;
+  color: #354459;
+  margin-bottom: 30px;
 }
 
+#typed {
+  color: #354459;
+}
+
+.skill span {
+  color: #9c9c9c;
+}
+.skill-level {
+  height: 5px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.skill-level-fill {
+  background-color: #ffc400;
+  height: 100%;
+  border-radius: 5px;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
 #page-title {
   font-size: 40px;
 }
@@ -158,20 +174,16 @@ h2::before {
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   margin: 0;
-  border: 1px solid #764ba2;
-  flex-grow: 0.5;
+  border: 1px solid #ffc400;
+  flex-grow: 1;
   transition: all 0.3s linear;
-}
-
-.project-card h3 {
-  color: #764ba2;
-  margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .project-card p {
   color: #555;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 14px;
   flex-wrap: wrap;
 }
 
@@ -185,13 +197,11 @@ h2::before {
   background-color: #f7f7ec;
   padding: 8px 15px;
   border-radius: 10px;
-  color: #764ba2;
-  border: 1px solid #764ba2;
+  color: #354459;
+  border: 1px solid #ffc400;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
   text-align: center;
   flex-grow: 1;
-  text-align: center;
   flex-basis: 150px;
   align-content: center;
   flex-shrink: 1;
@@ -214,7 +224,7 @@ h2::before {
   color: #333;
   font-weight: bold;
   transition: 0.3s;
-  border: 1px solid #764ba2;
+  border: 1px solid #ffc400;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   flex-wrap: wrap;
   transition:
@@ -223,8 +233,7 @@ h2::before {
 }
 
 .link-btn:hover {
-  background-color: #764ba2;
-  color: #f7f7ec;
+  background-color: #ffc400;
   transition: all 0.3s linear;
 }
 
@@ -241,28 +250,10 @@ footer {
 }
 
 .cert:hover {
-  background-color: #764ba2;
-  color: #f7f7ec;
-  transition: all 0.5s linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-
-.skill:hover {
-  background-color: #764ba2;
-  color: #f7f7ec;
-  transition: all 0.5s linear;
-}
-
 .project-card:hover {
-  box-shadow: 0 3px 5px rgba(103, 24, 182, 0.489);
-}
-
-#quera::before {
-  content: "💾";
-}
-
-#footer-span {
-  letter-spacing: 1px;
-  font-family: "Lalezar", Tahoma, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 html {
@@ -270,16 +261,8 @@ html {
   scroll-padding-top: 100px;
 }
 
-button,
-.skill,
-.cert,
-.link-btn,
-.nav-button {
-  user-select: none;
-}
-
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -287,7 +270,7 @@ button,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #764ba2;
+  background: #ffc400;
   border-radius: 5px;
 }
 
@@ -296,7 +279,7 @@ button,
 }
 
 #footer-year {
-  color: #764ba2;
+  color: #ffc400;
 }
 
 #nav {
@@ -323,6 +306,7 @@ button,
 
 .about2 {
   margin-bottom: 20px;
+  color: #585858;
 }
 
 .menu-btn {
@@ -362,8 +346,12 @@ button,
     display: flex;
   }
 
-  body.dark-mode .nav-buttons {
-    background: #181a18;
+  #skills {
+    display: block;
+  }
+
+  .skill {
+    width: 100%;
   }
 }
 
@@ -417,17 +405,24 @@ button,
 
 /* حالت تیره */
 .dark-mode-btn {
-  background-color: #764ba2;
+  background-color: #354459;
   padding: 5px 5px;
   border-radius: 10px;
-  color: #f7f7ec;
-  cursor: pointer;
+  color: #e0e0e0;
   margin-left: auto;
+  border: 1px solid #e0e0e0;
+  transition: all 0.1s linear;
+  display: flex;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .dark-mode-btn:hover {
-  background-color: #9b59b6;
   opacity: 1;
+}
+
+body.dark-mode .nav-buttons {
+  background: #181a18;
 }
 
 body.dark-mode {
@@ -443,15 +438,15 @@ body.dark-mode .project-card {
   background: #121412bc;
   color: #f7f7ec;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  border: 1px solid #764ba2;
+  border: 1px solid #ffc400;
 }
-
 body.dark-mode .section,
 body.dark-mode .skill,
 body.dark-mode .cert,
 body.dark-mode .nav-button,
 body.dark-mode #nav {
   background: #181a18;
+  color: #f7f7ec;
   transition: all 0.2s linear;
 }
 
@@ -465,17 +460,20 @@ body.dark-mode .link-btn:hover {
   color: #f7f7ec;
 }
 
+body.dark-mode .about {
+  color: #f7f7ec;
+}
+
+body.dark-mode #typed {
+  color: #e0e0e0;
+}
+
 body.dark-mode .section h3 {
   color: #f7f7ec;
 }
 
 body.dark-mode .cert:hover {
-  color: #f7f7ec;
-  box-shadow: 0 5px 12px rgba(103, 24, 182, 0.489);
-}
-
-body.dark-mode .cert {
-  color: #764ba2;
+  box-shadow: 0 4px 8px rgba(103, 24, 182, 0.489);
 }
 
 body.dark-mode .skill {
@@ -516,4 +514,7 @@ body.dark-mode #footer-span {
 body.dark-mode footer {
   color: #f7f7ec;
   background: #1a1a2e;
+}
+body.dark-mode #nav {
+  background: rgba(24, 26, 24, 0.8);
 }
