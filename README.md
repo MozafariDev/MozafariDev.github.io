@@ -45,14 +45,16 @@ I enjoy learning by building practical projects and continuously improving my sk
 MozafariDev.github.io/
 ├── index.html
 ├── style.css
-├── theme.js
 ├── certificates-galery.html
 ├── galery.css
-├── ticket.html
 ├── blog.html
-├── robots.txt
-├── sitemap.xml
+├── blog.css
 ├── fonts/
+├── scripts/ 
+├──     theme.js
+├── seo/
+├──     robots.txt
+├──     sitemap.xml
 └── images/
 ```
 
