@@ -50,11 +50,10 @@ MozafariDev.github.io/
 ├── blog.html
 ├── blog.css
 ├── fonts/
+├── robots.txt
+├── sitemap.xml
 ├── scripts/ 
 ├──     theme.js
-├── seo/
-├──     robots.txt
-├──     sitemap.xml
 └── images/
 ```
 
